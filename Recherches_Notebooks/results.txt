@@ -1,0 +1,12 @@
+Santa-Maria production [coeff production 2019]: 3200.0 - Erreur:~ 100.0 
+Santa-Maria production [moyenne des dernières années]: 3280.9025 - Erreur:~ 19.097499999999854 
+
+SantaMaria production [vrai coeff production + Moyenne historique]: 3200.0 - Erreur:~ 100.0 
+
+
+------------NOVOS CAMPOS-------------
+Novos-Campos production [réel coeff production]: 4164.0 - Errreur:~ -84.0
+Novos-Campos production [moyenne des dernières année]: 3452.4 - Errreur:~ 627.5999999999999
+Novos-Campos production [coeff determiné pour 2019]: 3300.0 - Errreur:~ 780.0
+
+SantaMaria production [vrai coeff production + Moyenne historique]: 4164.0 - Erreur:~ -84.0 
