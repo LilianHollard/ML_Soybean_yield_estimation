@@ -1,5 +1,7 @@
 # Stage_MachineLearning__
 
+## Architecture
+```
 .
 +-- CSV
 |   +-- Fichiers CSV (Données météorologiques + Base de variables à prédire)
@@ -10,9 +12,9 @@
 |   +-- Notebooks issue de différentes recherches sur plusieurs cultures
 |   +-- SOJA_final.ypnb -> Utilise Année Référence 
 |   +-- SOJACampos_final.ypnb -> Utilise Année Référence 
+```
 
-
-# Résumé
+## Résumé
 Dans le cadre de ma première année de Master, j’ai décidé d’effectuer mon stage au centre de recherche LICIIS, en télétravail en raison des conditions sanitaires.
 
 J’ai rejoint le laboratoire pour réaliser un travail de recherche sur la production de plants dans une région du sud du Brésil, Rio Grande do Sul, et plus particulièrement la ville de Santa Maria. Le but de ce travail est d’obtenir une prédiction pour les prochaines années à l’aide d’outils en Intelligence Artificielle et en se basant sur des données météorologiques.
@@ -21,7 +23,7 @@ Grâce à des recherches personnelles, j’ai déjà pu acquérir des compétenc
 
 Ce stage m’a beaucoup appris dans ce sens et a ainsi répondu à mes attentes :  j’ai pu découvrir de nouvelles technologies en accord avec la recherche en IA tout en améliorant mes connaissances et compétences déjà acquises en machine learning.
 
-# Enjeux
+## Enjeux
 
 Notre sujet de recherche s’oriente sur la prédiction de rendement agricole et nous avons choisi de nous focaliser sur le soja. Le soja est une légumineuse très nourrissante qui se trouve parmi les espèces produisant le plus de protéines par hectare. Elle est donc aujourd’hui utilisée comme apport de protéines en nourriture animale, ce qui conduit à un export massif, en particulier vers les pays européens, afin de répondre à une demande de plus en plus forte.
 Selon le Comtrade, organisme dépendant des Nations unies, la France a importé 3.5 millions de tonnes de soja sous forme d’huile ou de tourteaux dont 61% venaient du Brésil. Cette même année, la France n’a produit que 412.000 tonnes de soja sur son sol ; il y a donc une réelle dépendance de la France et de l’Europe envers les pays producteurs de soja (3).

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %} Production {% endblock %}
+
+{% block content %}
+  <button type="button" class="btn btn-outline-success" v-on:click="changeToSantaMaria">SantaMaria</button>
+  <button type="button" class="btn btn-outline-success" v-on:click="changeToCamposNovos">NovosCampos</button>
+{% endblock %}
+
+
+{% block santamaria %}
+  <span v-if="SM_show">
+    <form id="SantaMariaForm" method="POST">
+      <div class="input-group mb-3">
+        <input type="hidden" value="santamaria" name="city_" />
+
+        <input type="text" class="form-control" name="PRECTOT" placeholder="PRECTOT" aria-label="PRECTOT" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="T2M" placeholder="T2M" aria-label="T2M" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="ALLSKY_SFC_SW_DWN" placeholder="ALLSKY_SFC_SW_DWN" aria-label="ALLSKY_SFC_SW_DWN" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="T2MDEW" placeholder="T2MDEW" aria-label="T2MDEW" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="T2M_MIN" placeholder="T2M_MIN" aria-label="T2M_MIN" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="RH2M" placeholder="RH2M" aria-label="RH2M" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="YEAR" placeholder="YEAR" aria-label="YEAR" pattern="[0-9]*.[0-9]*">
+        
+        <button class="btn btn-primary" submittype="submit">Submit</button>
+      </div>
+    </form>
+    <p>Prediction pour SantaMaria en 2019 : [{{ prediction_SM - 60 }} ~ {{ prediction_SM + 60 }}]</p>
+    <br>
+    <!--<img src="http://localhost:5000/plots/SANTAMARIA/ProductionSM" /> -->
+  </span>
+{% endblock %}
+
+{% block novoscampos %}
+  <span v-if="CN_show">
+    <form id="CamposNovosForm" method="POST">
+      <div class="input-group mb-3">
+        <input type="hidden" value="camposnovos" name="city_" />
+        
+        <input type="text" class="form-control" name="PRECTOT" placeholder="PRECTOT" aria-label="PRECTOT" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="T2M" placeholder="T2M" aria-label="T2M" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="ALLSKY_SFC_SW_DWN" placeholder="ALLSKY_SFC_SW_DWN" aria-label="ALLSKY_SFC_SW_DWN" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="T2MDEW" placeholder="T2MDEW" aria-label="T2MDEW" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="T2M_MIN" placeholder="T2M_MIN" aria-label="T2M_MIN" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="RH2M" placeholder="RH2M" aria-label="RH2M" pattern="[0-9]*.[0-9]*">
+        <input type="text" class="form-control" name="YEAR" placeholder="YEAR" aria-label="YEAR" pattern="[0-9]*.[0-9]*">
+        
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+    <p>Prediction pour Campos Novos en 2019 : [{{ prediction_CN - 100 }} ~ {{ prediction_CN + 100 }}]</p>
+    <br>
+    <!-- <img src="http://localhost:5000/plots/CAMPOSNOVOS/ProductionCN" /> -->
+  </span>
+{% endblock %}
+
